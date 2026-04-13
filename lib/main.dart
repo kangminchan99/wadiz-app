@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:wabiz/src/core/theme/theme.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const WabizApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class WabizApp extends StatelessWidget {
+  const WabizApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Wabiz',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
+      theme: wabizDefaultTheme,
       home: const MyHomePage(title: 'Wabiz'),
     );
   }
