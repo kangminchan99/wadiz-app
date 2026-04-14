@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wabiz/src/core/router/router.dart';
 import 'package:wabiz/src/core/theme/theme.dart';
 
 void main() {
@@ -10,57 +11,17 @@ class WabizApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Wabiz',
       theme: wabizDefaultTheme,
-      home: const MyHomePage(title: 'Wabiz'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-
-        title: Text(widget.title),
+      darkTheme: ThemeData.dark(),
+      themeMode: ThemeMode.light,
+      // 테마가 바뀔때 애니메이션 효과를 주는 옵션
+      themeAnimationStyle: AnimationStyle(
+        curve: Curves.easeInCirc,
+        duration: const Duration(milliseconds: 500),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+      routerConfig: router,
     );
   }
 }
