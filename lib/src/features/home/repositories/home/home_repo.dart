@@ -1,7 +1,7 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:wabiz/src/features/models/home_model.dart';
-import 'package:wabiz/src/features/services/home/home_api.dart';
-import 'package:wabiz/src/features/services/home/home_api_service.dart';
+import 'package:wabiz/src/features/home/models/home_model.dart';
+import 'package:wabiz/src/features/home/services/home/home_api.dart';
+import 'package:wabiz/src/features/home/services/home/home_api_service.dart';
 
 part 'home_repo.g.dart';
 

@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:wabiz/src/core/network/dio_network_provider.dart';
-import 'package:wabiz/src/features/services/home/home_api.dart';
+import 'package:wabiz/src/features/home/services/home/home_api.dart';
 
 part 'home_api_service.g.dart';
 

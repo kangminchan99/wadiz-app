@@ -1,6 +1,6 @@
-import 'package:retrofit/retrofit.dart';
 import 'package:dio/dio.dart';
-import 'package:wabiz/src/features/models/home_model.dart';
+import 'package:retrofit/retrofit.dart';
+import 'package:wabiz/src/features/home/models/home_model.dart';
 
 part 'home_api.g.dart';
 

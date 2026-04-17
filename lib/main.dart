@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:wabiz/src/core/router/router.dart';
 import 'package:wabiz/src/core/theme/theme.dart';
 
 void main() {
-  runApp(const WabizApp());
+  runApp(ProviderScope(child: const WabizApp()));
 }
 
 class WabizApp extends StatelessWidget {

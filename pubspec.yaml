@@ -21,6 +21,9 @@ dependencies:
   retrofit:
   flutter_riverpod:
   riverpod_annotation:
+  intl: ^0.20.2
+  cached_network_image: ^3.4.1
+  flutter_svg: ^2.2.4
 
 dev_dependencies:
   flutter_test:

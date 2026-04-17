@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:wabiz/src/features/views/home/home_page.dart';
-import 'package:wabiz/src/features/views/wabiz_app_shell.dart';
+import 'package:wabiz/src/features/home/views/home/home_page.dart';
+import 'package:wabiz/src/features/home/views/wabiz_app_shell.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>();
 final _shellNavigatorKey = GlobalKey<NavigatorState>();
